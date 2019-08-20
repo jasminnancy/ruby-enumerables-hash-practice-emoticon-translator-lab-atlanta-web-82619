@@ -8,8 +8,10 @@ def load_library(file)
       path[:get_meaning] = key[value(0)]
       path[:get_emoticon] = key[value(1)]
     else
-      path => :get_meaning
-      path => :get_emoticon
+      path[:get_meaning] = {}
+      path[:get_meaning] = key[value(0)]
+      path[:get_emoticon] = {}
+      path[:get_emoticon] = key[value(1)]
     end
   end
 end
