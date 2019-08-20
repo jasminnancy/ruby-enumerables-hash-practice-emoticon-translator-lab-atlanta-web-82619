@@ -1,12 +1,10 @@
 require "yaml"
-require "pry"
 
 def load_library(file)
   path = YAML.load_file(file)
   library = {:get_meaning => {}, :get_emoticon => {}}
     
   path.each do |meaning, emote_array|
-    #binding.pry
     library[:get_meaning][emote_array[1]] = meaning
     library[:get_emoticon][emote_array[0]] = emote_array[1]
   end
