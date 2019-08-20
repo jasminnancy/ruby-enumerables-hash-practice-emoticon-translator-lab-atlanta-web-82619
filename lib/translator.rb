@@ -6,7 +6,6 @@ def load_library(file)
 
  
     
-  return library
 end
 
 def get_japanese_emoticon(path, emote)
