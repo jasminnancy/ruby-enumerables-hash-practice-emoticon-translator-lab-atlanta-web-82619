@@ -5,7 +5,8 @@ def load_library(file)
   library = {get_meaning => {}, get_emoticon => {}}
     
   path.each do |key, value|
-    
+    library[:get_meaning] << key[value(0)]
+    library[:get_emoticon] << key[value(1)]
   end
 end
 
