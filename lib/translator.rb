@@ -5,10 +5,10 @@ def load_library(file)
   path = YAML.load_file(file)
   library = {:get_meaning => {}, :get_emoticon => {}}
     
-  path.each do |key, value|
+  path.each do |meaning, emote_array|
     binding.pry
-    library[:get_meaning] << key[value(0)]
-    library[:get_emoticon] << key[value(1)]
+    library[:get_meaning][emote_array[1]] = meaning
+    library[:get_emoticon][emote_array[0]] = [emote_array[1]]
   end
   return library
 end
