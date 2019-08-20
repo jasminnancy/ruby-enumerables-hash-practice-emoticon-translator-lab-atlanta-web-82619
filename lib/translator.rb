@@ -1,10 +1,10 @@
 require "yaml"
 
 def load_library(file)
-  library = {}
+  library = {get_meaning, get_emoticon}
   path = YAML.load_file(file)
 
-  path.each do |key, value|
+ 
     
   end
   return library
