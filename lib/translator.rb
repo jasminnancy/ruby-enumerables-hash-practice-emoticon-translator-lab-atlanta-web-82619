@@ -7,7 +7,6 @@ def load_library(file)
     path[:get_meaning] = key[value(0)]
     path[:get_emoticon] = key[value(1)]
   end
-  return path
 end
 
 def get_japanese_emoticon(path, emote)
