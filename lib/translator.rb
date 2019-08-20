@@ -2,6 +2,7 @@ require "yaml"
 
 def load_library(file)
   path = YAML.load_file(file)
+  library = {}
     
   path.each do |key, value|
     
