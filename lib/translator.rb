@@ -2,13 +2,12 @@ require "yaml"
 
 def load_library(file)
   path = YAML.load_file(file)
-  library = {get_meaning => {}, get_emoticon => {}}
     
   path.each do |key, value|
-    library[get_meaning] << key[value(0)]
-    library[get_emoticon] << key[value(1)]
+    path[ << get_meaning
+    path << get_]
   end
-  return library
+  return path
 end
 
 def get_japanese_emoticon(path, emote)
