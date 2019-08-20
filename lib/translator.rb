@@ -4,8 +4,8 @@ def load_library(file)
   path = YAML.load_file(file)
     
   path.each do |key, value|
-    path[ << get_meaning
-    path << get_]
+    path[:get_meaning] = key[value(0)]
+    path[:get_emoticon] = key[value(1)]
   end
   return path
 end
